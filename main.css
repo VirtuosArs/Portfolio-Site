@@ -1,0 +1,187 @@
+/*common css properties for body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    font-size: 1.1em;
+    color: #666;
+    font-weight: 400;
+    background-color: #222;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.width {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+div#intro .header-image {
+    float: left;
+    width: 230px;
+    height: 100px;
+}
+
+
+/* intro */
+div#intro {
+    background-color: #222;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+div#intro .intro-content {
+    padding: 65px 40px;
+    text-align: left;
+}
+
+
+div#intro div.intro-content-short {
+    padding: 30px 0 20px 20px;
+    text-align: left;
+}
+
+
+div#intro h2 {
+    text-shadow: 1px 1px 0 #000;
+    font: 63px cursive, georgia, serif;
+    text-align: right;
+}
+
+
+div#intro h2, div#intro p {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+div#intro p {
+    font-size: 1.4em;
+    color: #ddd;
+    text-align: right;
+    line-height: 1.4em;
+}
+
+
+/*header 1 attributes*/
+h1 {
+  display: inline-block;
+  color: #2d3c49;
+  float: right;
+  padding: 0 34px 0 0;
+  font: 63px cursive, georgia, serif;
+  text-align: right;
+}
+
+
+/*horizontal rule attributes*/
+hr.style2 {
+  border-top: 10px double #8c8b8b;
+}
+
+
+/*banner attributes*/
+#banner {
+    padding: 12em 0 10em 0;
+    background-image: url('./images/main.jpg');/*TODO: Change the image url as per your system path */
+    background-color: #f7f6fb;
+    box-sizing: border-box;
+    background-position: inherit;
+    border-top: 0.5em solid #222;
+    background-size: 100% 100%;
+  }
+
+
+/*sub section i.e. "Featured Work" section attributes*/
+.sub_section {
+  color: #7d97ad;
+  font: 36px verdana, georgia, serif;
+  text-align: right;
+  background-color: #222;
+}
+
+
+/*grid images section at bottom attributes*/
+div.polaroid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* or space-around */
+}
+
+
+a.polaroid {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+}
+
+
+@media screen and (min-width: 50em) {
+  a {
+    width: calc(25% - 6px);
+  }
+}
+
+
+a:hover img {
+  transform: scale(1.15);
+}
+
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+
+figcaption {
+  margin-top: 15px;
+  font: 36px verdana, georgia, serif;
+  color: #7d97ad;
+}
+
+
+figcaption.link {
+  margin-top: 15px;
+  font: 14px verdana, georgia, serif;
+  color: #7d97ad;
+}
+
+
+img.grid_img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+figure {
+    text-align: center;
+}
+
+
+/*bottom paragraph attribute properties*/
+.p a {
+  display: inline;
+  font-size: 14px;
+  margin: 0;
+  text-decoration: underline;
+  color: blue;
+}
+
+
+.p {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 25px;
+}
